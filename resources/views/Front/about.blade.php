@@ -16,7 +16,7 @@
 	</div> -->
 		<section>
 		<div class="container">
-			<div class="row no-gutters		 my-5">
+			<div class="row no-gutters	 my-5">
 				<div class="col-lg-2"><div class="media block-6 services active py-5 d-block text-center">
 					<div class="d-flex justify-content-center">
 						<div class="icon d-flex align-items-center justify-content-center">
@@ -24,7 +24,7 @@
 							<img src="/Front/images/icon1.png" alt="">
 						</div>
 					</div>
-					
+
 				</div></div>
 				<div class="col-lg-10 p-3" style="background:#F7C70E;">
 					<h3>FRIENDLY SERVICE</h3>
@@ -38,10 +38,10 @@
 					<div class="d-flex justify-content-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<!-- <span class="ion-ios-car"></span> -->
-							<img src="/Front/images/icon2.png" alt="">	
+							<img src="/Front/images/icon2.png" alt="">
 						</div>
 					</div>
-					
+
 				</div></div>
 			</div>
 				<div class="row no-gutters my-5">
@@ -52,7 +52,7 @@
 							<img src="/Front/images/icon3.png" alt="">
 						</div>
 					</div>
-					
+
 				</div></div>
 				<div class="col-lg-10 p-3" style="background:#F7C70E;">
 					<h3>BUSINESS </h3>
@@ -69,7 +69,7 @@
 							<img src="/Front/images/icon4.png" alt="">
 						</div>
 					</div>
-					
+
 				</div></div>
 			</div>
 		<div class="row no-gutters my-5">
@@ -80,14 +80,14 @@
 							<img src="/Front/images/icon5.png" alt="">
 						</div>
 					</div>
-					
+
 				</div></div>
 				<div class="col-lg-10 p-3" style="background:#F7C70E;">
 					<h3>ROOMS</h3>
 					<p>As a guest at VELARA HOTEL, you fall asleep behind hotel walls that cherish design and retro phenomena – the ones that have passed through the nostalgic eye of a needle and once again found the way to our homes and hearts.</p></div>
 			</div>
 		</div>
-			
+
 	</section>
 		<section class="ftco-section testimony-section bg-light">
 		<div class="container">

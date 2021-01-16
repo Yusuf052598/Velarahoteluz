@@ -12045,7 +12045,7 @@ h5,
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
-    
+
 }
 /*.video-player.overlay {
     position: absolute;
@@ -14081,13 +14081,16 @@ g .blog-entry .text {
     padding: 10px;
     background-color: white;
     width: 80%;
-    margin:0 auto; 
+    margin:0 auto;
 }
 @media(max-width:767.98px) {
 .sidebar-wrap .fields .icon {
         right: 10px;
     }
-
+    check-room .check-roomm {
+        margin: 0 auto;
+        text-align: center;
+    }
 .data {
     width: 100%;
 }
@@ -14167,4 +14170,24 @@ g .blog-entry .text {
 }
 .news img{
     height: 350px;
+  }
 }
+.ctegory-room .room-about {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ctegory-room .room-about span {
+    color: #F7C70F;
+}
+
+.room-span {
+    right: 0;
+    position: absolute;
+}
+.check-room .check-roomm{
+    margin:0 auto;
+    /*text-align: center;*/
+}
+

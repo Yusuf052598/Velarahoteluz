@@ -104,10 +104,10 @@
                     <div class="col-md-12 heading-section text-center ftco-animate">
                         <h3 class="font-weight-bold">Conference hall</h3>
                     </div>
-                 
+
                 <div class="col-lg-6 pb-5  pt-3 wrap-about  ftco-animate">
                     <div class="pb-md-5">
-                        <p class="fic-text p-3"> 
+                        <p class="fic-text p-3">
                             The conference hall is located on the 2nd floor of the Semashko apart-hotel in the very center of Grodno. The hall can accommodate up to 50 guests. Any type of event can be organized in the conference room: conference, presentation, business meeting, training, seminar. The room is quite spacious - 150 m2, a comfortable temperature can be maintained with an air conditioner. The conference room is equipped with comfortable furniture that can be arranged in various forms: classroom, theater, letter T., round table. The hall is available wireless Internet Wi-Fi. Free parking is available on site.
                         </p>
                     </div>
@@ -175,154 +175,38 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url('/Front/images/menu-1.jpg');"></div>
-                        <div class="desc pr-3 text-md-right">
-                            <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Crab with Onion</span></h3>
-                                <span class="price price-left">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url('/Front/images/menu-2.jpg');"></div>
-                        <div class="desc pr-3 text-md-right">
-                            <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$29.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                @if(isset($rest))
+                    @for($i=1;$i<sizeof($rest);$i+=2)
+                        <div class="col-md-6">
+                            <div class="pricing-entry d-flex ftco-animate">
+                                <div class="img order-md-last" style="background-image: url('{{'/'.$rest[$i-1]->img}}');"></div>
+                                <div class="desc pr-3 text-md-right">
+                                    <div class="d-md-flex text align-items-center">
+                                        <h3 class="order-md-last heading-left"><span>{{$rest[$i-1]->name}}</span></h3>
+                                        <span class="price price-left">$20.00</span>
+                                    </div>
+                                    <div class="d-block">
+                                        <p>{{$rest[$i-1]->title['uz']}}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url('/Front/images/menu-3.jpg');"></div>
-                        <div class="desc pr-3 text-md-right">
-                            <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url('/Front/images/menu-4.jpg');"></div>
-                        <div class="desc pr-3 text-md-right">
-                            <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                        <div class="col-md-6">
+                            <div class="pricing-entry d-flex ftco-animate">
+                                <div class="img" style="background-image: url('{{'/'.$rest[$i]->img}}');"></div>
+                                <div class="desc pl-3">
+                                    <div class="d-md-flex text align-items-center">
+                                        <h3><span>{{$rest[$i]->name}}</span></h3>
+                                        <span class="price">$49.91</span>
+                                    </div>
+                                    <div class="d-block">
+                                        <p>{{$rest[$i]->title['uz']}}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url('/Front/images/menu-3.jpg');"></div>
-                        <div class="desc pr-3 text-md-right">
-                            <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url('/Front/images/menu-2.jpg');"></div>
-                        <div class="desc pr-3 text-md-right">
-                            <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$29.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url('/Front/images/menu-5.jpg');"></div>
-                        <div class="desc pl-3">
-                            <div class="d-md-flex text align-items-center">
-                                <h3><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price">$49.91</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url('/Front/images/menu-6.jpg');"></div>
-                        <div class="desc pl-3">
-                            <div class="d-md-flex text align-items-center">
-                                <h3><span>Ultimate Overload</span></h3>
-                                <span class="price">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url('/Front/images/menu-7.jpg');"></div>
-                        <div class="desc pl-3">
-                            <div class="d-md-flex text align-items-center">
-                                <h3><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url('/Front/images/menu-8.jpg');"></div>
-                        <div class="desc pl-3">
-                            <div class="d-md-flex text align-items-center">
-                                <h3><span>Ham &amp; Pineapple</span></h3>
-                                <span class="price">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url('/Front/images/menu-7.jpg');"></div>
-                        <div class="desc pl-3">
-                            <div class="d-md-flex text align-items-center">
-                                <h3><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url('/Front/images/menu-6.jpg');"></div>
-                        <div class="desc pl-3">
-                            <div class="d-md-flex text align-items-center">
-                                <h3><span>Ultimate Overload</span></h3>
-                                <span class="price">$20.00</span>
-                            </div>
-                            <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    @endfor
+                @endif
             </div>
         </div>
     </section>
@@ -333,10 +217,10 @@
                         <div class="col-md-12 heading-section text-center ftco-animate">
                             <h3 class="font-weight-bold">Fitness Hall</h3>
                         </div>
-                     
+
                     <div class="col-lg-6 pb-5  pt-3 wrap-about  ftco-animate">
                         <div class="pb-md-5">
-                            <p class="fic-text p-3">  
+                            <p class="fic-text p-3">
                                 In the gym, all conditions have been created so that sports activities bring great emotional pleasure and give high results. The interior of the gym is thought out in such a way that an atmosphere conducive to training is created inside, which is harmoniously complemented by everything necessary for a comfortable time of spending: from comfortable changing rooms and showers to reliable personal lockers.
                             </p>
                         </div>

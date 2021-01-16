@@ -57,7 +57,7 @@
                 <span class="subheading">Welcome to Velara Hotel</span>
                 <h2 class="mb-4">About us</h2>
                 <p>VELARA HOTEL offers its guests accommodation in one of 50 spacious and comfortable rooms,
-                     designed in a modern and elegant European style. 
+                     designed in a modern and elegant European style.
                     Guests can choose from rooms of various categories from Standard rooms to Business Suites.</p>
             </div>
         </div>
@@ -67,7 +67,7 @@
                     <div class="d-flex justify-content-center">
                         <div class="icon d-flex align-items-center justify-content-center">
                             {{-- <span class="flaticon-reception-bell"></span> --}}
-                            <img src="/Front/images/icon1.png" alt="">
+                            <a href="{{route('about')}}"> <img src="/Front/images/icon1.png" alt=""></a>
                         </div>
                     </div>
                     <div class="media-body">
@@ -79,7 +79,7 @@
                 <div class="media block-6 services active py-4 d-block text-center">
                     <div class="d-flex justify-content-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            
+
                             <img src="/Front/images/icon2.png" alt="">
                         </div>
                     </div>
@@ -92,8 +92,8 @@
                 <div class="media block-6 services py-4 d-block text-center">
                     <div class="d-flex justify-content-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                        
-                            <img src="/Front/images/icon2.png" alt="">
+
+                            <a href="{{route('about')}}"> <img src="/Front/images/icon2.png" alt=""></a>
                         </div>
                     </div>
                     <div class="media-body">
@@ -106,7 +106,7 @@
                     <div class="d-flex justify-content-center">
                         <div class="icon d-flex align-items-center justify-content-center">
                             {{-- <span class="ion-ios-car"></span> --}}
-                            <img src="/Front/images/icon3.png" alt="">
+                            <a href="{{route('about')}}"> <img src="/Front/images/icon3.png" alt=""></a>
                         </div>
                     </div>
                     <div class="media-body">
@@ -119,7 +119,7 @@
                     <div class="d-flex justify-content-center">
                         <div class="icon d-flex align-items-center justify-content-center">
                             {{-- <span class="ion-ios-spa"></span> --}}
-                            <img src="/Front/images/icon4.png" alt="">
+                            <a href="{{route('about')}}"> <img src="/Front/images/icon4.png" alt=""></a>
                         </div>
                     </div>
                     <div class="media-body">
@@ -156,7 +156,7 @@
                 <div class=" room-wrap1">
                     <div class="img img2 d-flex align-items-center">
                         <div class="wrap2">
-                            
+
                         <div class="text text-center px-4 py-4">
                             <h2>Welcome to <a href="{{route('hotel')}}">Verala </a> Hotel</h2>
                         </div>
@@ -209,7 +209,7 @@
         </div>
         <div class="row">
             @if(isset($res))
-              @for($i=1;$i<sizeof($res);$i++)
+              @for($i=1;$i<sizeof($res);$i+=2)
                     <div class="col-md-6">
                         <div class="pricing-entry d-flex ftco-animate">
                             <div class="img order-md-last" style="background-image: url('{{'/'.$res[$i-1]->img}}');"></div>
@@ -238,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                @endfor
+                 @endfor
             @endif
         </div>
     </div>

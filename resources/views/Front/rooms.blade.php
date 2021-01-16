@@ -15,7 +15,7 @@
                 <div class=" room-wrap1">
                     <div class="img img2 d-flex align-items-center">
                         <div class="wrap2">
-                            
+
                         <div class="text text-center px-4 py-4">
                             <h2>Welcome to <a href="{{route('hotel')}}">Verala </a> Hotel</h2>
                         </div>
@@ -33,7 +33,7 @@
                                         <p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
                                         <p class="mb-0"><span class="price mr-1">${{$model->price}}</span> <span class="per">per night</span></p>
                                         <h3 class="mb-3"><a href="#">{{$model->name}}</a></h3>
-                                        <p class="pt-1"><a href="#" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+                                        <p class="pt-1"><a href="{{route('rooms.show',$model->id)}}" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
                                     </div>
                                 </div>
                             </div>

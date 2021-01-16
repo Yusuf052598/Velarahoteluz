@@ -1,15 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Front;
+namespace App\Http\Controllers\Front\About;
 
-use App\Http\Controllers\Controller as BaseController;
-use App\News;
-use App\Restaurants;
+use App\Http\Controllers\Controller as B;
 use App\Rooms;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 
-class Controller extends BaseController
+class Controller extends B
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +14,8 @@ class Controller extends BaseController
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function index()
-    {
-        $news_model=News::take(3)->latest()->get();
-        $res=Restaurants::take(8)->latest()->get();
-        $rooms_model=Rooms::take(5)->latest()->get();
-        $index=2;
-        return view('Front.index',compact('news_model','index','res','rooms_model'));
+    {    $about=2;
+        return view('Front.about',compact('about'));
     }
 
     /**
@@ -49,12 +42,12 @@ class Controller extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Rooms $rooms
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
      */
-    public function show($id)
+    public function show(Rooms $rooms)
     {
-        //
+        return view('Front.room');
     }
 
     /**

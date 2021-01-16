@@ -42,12 +42,12 @@ class Controller extends BaseController
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Rooms $rooms
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
      */
-    public function show($id)
+    public function show(Rooms $rooms)
     {
-        //
+        return view('Front.room',compact('rooms'));
     }
 
     /**

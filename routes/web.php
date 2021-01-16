@@ -53,6 +53,7 @@ Route::namespace('Front')->prefix('/')->group(function (){
     });
     Route::namespace('Rooms')->prefix('/rooms')->group(function (){
         Route::get('/','Controller@index')->name('rooms');
+        Route::get('/view/{rooms}','Controller@show')->name('rooms.show');
     });
     Route::namespace('Booking')->prefix('/booking')->group(function (){
         Route::get('/','Controller@index')->name('booking');
@@ -66,7 +67,7 @@ Route::namespace('Front')->prefix('/')->group(function (){
      Route::namespace('About')->prefix('/about')->group(function (){
         Route::get('/','Controller@index')->name('about');
     });
-    Route::namespace('Restaurnts')->prefix('/about')->group(function (){
-        Route::get('/','Controller@index')->name('restaurant');
+    Route::namespace('Booking')->prefix('/booking')->group(function (){
+        Route::post('/store','Controller@store')->name('booking.store');
     });
 });

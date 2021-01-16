@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front\Failes;
 
 use App\Http\Controllers\Controller as BaseController;
+use App\Restaurants;
 use Illuminate\Http\Request;
 
 class Controller extends BaseController
@@ -14,7 +15,8 @@ class Controller extends BaseController
      */
     public function index()
     {   $failes=2;
-        return view('Front.failes',compact('failes'));
+        $rest=Restaurants::take(8)->latest()->get();
+        return view('Front.failes',compact('failes','rest'));
     }
 
     /**

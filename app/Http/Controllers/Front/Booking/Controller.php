@@ -36,7 +36,7 @@ class Controller extends BaseController
      */
     public function store(Request $request)
     {
-        //
+        dd(12);
     }
 
     /**
